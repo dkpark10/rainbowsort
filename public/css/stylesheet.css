@@ -1,23 +1,18 @@
 body {
-  background: black;
+  background: white;
 }
 #sortBoard {
   position: absolute;
   top: 50%;
   left: 50%;
-  border: 1px solid white;
   display: flex;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-#element {
+#sortBoard span{
   margin-top:auto;
-  border: 0.1px solid royalblue;
   position: relative;
-  width: 0.1px;
-  height: 70px;
+  width: 0.65px;
   display: inline-block;
   float: left;
-}
-button{
-  width: 100px;
-  height: 20px;
 }

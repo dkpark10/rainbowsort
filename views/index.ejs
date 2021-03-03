@@ -8,9 +8,9 @@
   </head>
 <body>
   <div id='sortBoard'>
-    <span id='updown1'></span>
-    <span id='updown2'></span>
+    <% for (let i=0; i< shuffle.length; i++) { %>
+      <span id='element<%=i+1%>' style="height: <%=shuffle[i]/2%>px; background-color:<%=color[shuffle[i]]%>;"></span>
+    <% } %>
   </div>
 </body>
-
 </html>
