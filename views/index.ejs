@@ -7,6 +7,28 @@
     <meta charset="utf-8">
   </head>
 <body>
+  <header id='radioBoard'>
+    <span>
+      <input type="radio" class ="radioinput" name='sort' value='insert'>
+      <label>insertsort</label>
+    </span>
+    <span>
+      <input type="radio" class="radioinput" name='sort'>
+      <label>selectionsort</label>
+    </span>
+    <span>
+      <input type="radio" class="radioinput" name='sort'>
+      <label>mergesort</label>
+    </span>
+    <span>
+      <input type="radio" class="radioinput" name='sort'>
+      <label>radixsort</label>
+    </span>
+    <span>
+      <input type="radio" class="radioinput" name='sort'>
+      <label>quicksort</label>
+    </span>
+  </header>
   <div id='sortBoard'>
     <% for (let i=0; i< shuffle.length; i++) { %>
       <span id='element<%=i+1%>' style="height: <%=shuffle[i]/2%>px; background-color:<%=color[shuffle[i]]%>;"></span>
