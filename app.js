@@ -23,7 +23,7 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 app.use('/lib', express.static('lib'));
 
-app.use('/', (request, response) => {
+app.get('/', (request, response) => {
   const shuffledList = (function (len) {
     return Array.from({ length: len }, (v, i) => (i + 1))
       .map((element, curidx, arr) => {

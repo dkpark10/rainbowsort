@@ -1,6 +1,20 @@
-body {
-  background: white;
+.radioSection{
+  display :flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  font-family: 'Montserrat', sans-serif;
+  top:50%;
 }
+
+.radioSection label{
+  top: 50%;
+  left: -5rem;
+  transform: translateY(-50%);
+  transition: border-color 400ms ease;
+  text-align: justify;
+}
+
 #sortBoard {
   position: absolute;
   top: 50%;

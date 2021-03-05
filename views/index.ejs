@@ -3,36 +3,46 @@
   <head>
     <title>rainbowsort</title>
     <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+    <script type="text/javascript" src="../lib/buttonEvent.js"></script>
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <meta charset="utf-8">
   </head>
 <body>
-  <header id='radioBoard'>
+  <header class = 'radioSection'>
     <span>
-      <input type="radio" class ="radioinput" name='sort' value='insert'>
-      <label>insertsort</label>
+      <input type="radio" class ="radioinput" name='sort' value='insert'>   <!--name = 그룹 value : 전달될 값-->
+      <label>InsertSort</label>
     </span>
     <span>
-      <input type="radio" class="radioinput" name='sort'>
-      <label>selectionsort</label>
+      <input type="radio" class="radioinput" name='sort' value = 'selection'>
+      <label>SelectionSort</label>
     </span>
     <span>
-      <input type="radio" class="radioinput" name='sort'>
-      <label>mergesort</label>
+      <input type="radio" class="radioinput" name='sort' value = 'merge'>
+      <label>MergeSort</label>
     </span>
     <span>
-      <input type="radio" class="radioinput" name='sort'>
-      <label>radixsort</label>
+      <input type="radio" class="radioinput" name='sort' value = 'radix'>
+      <label>RadixSort</label>
     </span>
     <span>
-      <input type="radio" class="radioinput" name='sort'>
-      <label>quicksort</label>
+      <input type="radio" class="radioinput" name='sort' value = 'quick'>
+      <label>QuickSort</label>
+    </span>
+    <span>
+      <input type="radio" class="radioinput" name='sort' value = 'coktail'>
+      <label>CocktailSort</label>
     </span>
   </header>
-  <div id='sortBoard'>
+  <section id='sortBoard'>
     <% for (let i=0; i< shuffle.length; i++) { %>
       <span id='element<%=i+1%>' style="height: <%=shuffle[i]/2%>px; background-color:<%=color[shuffle[i]]%>;"></span>
     <% } %>
-  </div>
+  </section>
+  <button id = 'run'>run</button>
 </body>
 </html>
