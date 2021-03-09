@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <title>rainbowsort</title>
-    <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
-    <script type="text/javascript" src="../lib/buttonEvent.js"></script>
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-  </head>
+
+<head>
+  <title>rainbowsort</title>
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+  <script type="text/javascript" src="../lib/buttonEvent.js"></script>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+</head>
+
 <body>
-  <header class = 'radioSection'>
+  <header class='radioSection'>
     <span>
-      <input type="radio" class ="radioinput" name='sort' value='insert'>   <!--name = 그룹 value : 전달될 값-->
+      <input type="radio" class="radioinput" name='sort' value='insert'>
+      <!--name = 그룹 value : 전달될 값-->
       <label>InsertSort</label>
     </span>
     <span>
-      <input type="radio" class="radioinput" name='sort' value = 'selection'>
+      <input type="radio" class="radioinput" name='sort' value='selection'>
       <label>SelectionSort</label>
     </span>
     <span>
-      <input type="radio" class="radioinput" name='sort' value = 'merge'>
+      <input type="radio" class="radioinput" name='sort' value='bubble'>
+      <label>BubbleSort</label>
+    </span>
+    <span>
+      <input type="radio" class="radioinput" name='sort' value='merge'>
       <label>MergeSort</label>
     </span>
     <span>
-      <input type="radio" class="radioinput" name='sort' value = 'radix'>
+      <input type="radio" class="radioinput" name='sort' value='radix'>
       <label>RadixSort</label>
     </span>
     <span>
-      <input type="radio" class="radioinput" name='sort' value = 'quick'>
+      <input type="radio" class="radioinput" name='sort' value='quick'>
       <label>QuickSort</label>
     </span>
     <span>
-      <input type="radio" class="radioinput" name='sort' value = 'coktail'>
+      <input type="radio" class="radioinput" name='sort' value='coktail'>
       <label>CocktailSort</label>
     </span>
   </header>
+  <select name="sortType">
+    <option value="">select sort</option>
+    <option value="selection"><label>Selection Sort</label></option>
+    <option value="bubble">Bubble Sort</option>
+    <option value="radix">Radix Sort</option>
+  </select>
   <section id='sortBoard'>
   </section>
-  <button id = 'run'>run</button>
+  <button id='run'>run</button>
 </body>
+
 </html>
